@@ -66,6 +66,8 @@ public class AutoGenergate {
 	String baby_name = "";//POSITION_STORE_FEATURE_CODE
 	String beauty_code = "";//POSITION_STORE_FEATURE_NAME
 	String beauty_name = "";//POSITION_STORE_FEATURE_CODE
+	String cc_order_ceiling = "";//Maximum Click and Collect order can be supported
+	String cc_order_allowed = "";//Is Click and Collect order allowed
 	
 	public void reSetParam(){
 		 position_pos_code ="";//编码POSITION_POS_CODE 
@@ -126,6 +128,8 @@ public class AutoGenergate {
 		 baby_name = "";//POSITION_STORE_FEATURE_CODE
 		 beauty_code = "";//POSITION_STORE_FEATURE_NAME
 		 beauty_name = "";//POSITION_STORE_FEATURE_CODE
+		 cc_order_ceiling = "";//Maximum Click and Collect order can be supported
+		 cc_order_allowed = "";//Is Click and Collect order allowed
 	}
 	
 	public String getEachRow(){
@@ -138,7 +142,7 @@ public class AutoGenergate {
 				  +position_latitude+"|"+position_logitude+"|"+position_content+"|"+position_opening_schedule+"|"
 				  +position_sunday_opentime+"|"+position_sunday_closetime+"|"+position_monday_opentime+"|"+position_monday_closetime+"|"+position_tuesday_opentime+"|"+position_tuesday_closetime
 				  +"|"+position_wednesday_opentime+"|"+position_wednesday_closetime+"|"+position_thursday_opentime+"|"+position_thursday_closetime+"|"+position_friday_opentime
-				  +"|"+position_friday_closetime+"|"+position_saturday_opentime+"|"+position_saturday_closetime+"|"+storeCloseDate+"|"+phoneNumber+"|";
+				  +"|"+position_friday_closetime+"|"+position_saturday_opentime+"|"+position_saturday_closetime+"|"+storeCloseDate+"|"+phoneNumber+"|"+cc_order_ceiling+"|"+cc_order_allowed+"|";
 		if(!pharmacy_name.equals("")){
 			eachRow = eachRow +pharmacy_code+"|"+pharmacy_name+"|";
 		}

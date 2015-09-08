@@ -98,8 +98,10 @@ public class AutoGenergatedMain extends AutoGenergate{
 	/*genergate en start*/
 	public void genergateEn(List everyCell,int j,String lang) {
 		if(j == 0){//编码POSITION_POS_CODE 和 语言编码POSITION_LANG_CODE
+			/*
 			position_pos_code = (String) everyCell.get(0);
 			position_pos_code = "3".concat(position_pos_code.trim());
+			*/
 			position_lang_code =lang;
 		}
 		
@@ -464,8 +466,14 @@ public class AutoGenergatedMain extends AutoGenergate{
 		if(j ==66){//StoreCloseDate
 			storeCloseDate = (String) everyCell.get(66);
 		}
-		if(j ==67){//PhoneNumber
-			phoneNumber = (String) everyCell.get(67);
+		if(j ==67){//Store_code
+			position_pos_code = (String) everyCell.get(67);
+		}
+		if(j ==68){//cc_order_ceiling
+			cc_order_ceiling = (String) everyCell.get(68);
+		}
+		if(j ==69){//cc_order_allowed
+			cc_order_allowed = (String) everyCell.get(69);
 		}
 		
 		
@@ -910,8 +918,14 @@ public class AutoGenergatedMain extends AutoGenergate{
 		if(j ==66){//StoreCloseDate
 			storeCloseDate = (String) everyCell.get(66);
 		}
-		if(j ==67){//PhoneNumber
-			phoneNumber = (String) everyCell.get(67);
+		if(j ==67){//Store_code
+			position_pos_code = (String) everyCell.get(67);
+		}
+		if(j ==68){//cc_order_ceiling
+			cc_order_ceiling = (String) everyCell.get(68);
+		}
+		if(j ==69){//cc_order_allowed
+			cc_order_allowed = (String) everyCell.get(69);
 		}
 		
 		
